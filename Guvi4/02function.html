@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function displayName(std1,std2){
+            console.log(std1,std2)
+        }
+        displayName("Preethi","Guna");
+
+        var test=function(){
+            console.log("Hello World");
+        }
+        test();
+        var test1 = function(std1,std2){
+            console.log(std1,std2)
+        }
+        test1("Preethi","Gunasekaran");
+
+        (function(){
+            console.log("HelloWorld");
+        })();
+
+        (function(name){
+            console.log(name);
+        })("Preethi");
+//Arrow Function with single line
+        var result = (function(name){
+            return name;
+        })("Preethi Gunasekaran");
+        console.log(result);
+
+        var check=()=>console.log("Check");
+        check();
+
+        var check1=()=>2;
+        console.log(check1());
+
+        var check2=(a,b)=>a+b
+        console.log(check2(2,4))
+    //multiple line
+     
+    var check3=()=>{
+        var a=45+60
+        return a;
+    }
+    console.log(check3())
+    </script>
+</body>
+</html>

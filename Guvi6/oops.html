@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Car{
+            constructor(name,year,acType){
+                this.name=name;
+                this.year=year;
+                this.acType=acType;
+                console.log("Constructor Called");
+            }
+        }
+
+        //instance of it > object
+        //new keyword
+
+        let s1 = new Car("Audi",2020,"Yes");
+        let s2=new Car("BMW",1995,"No");
+        
+        console.log(s1)
+        console.log(s1.name,s1.acType,s1.year)
+        console.log(s2)
+        s1.name="Suzuki"
+        s1.year=2023
+        s1.acType="Yes"
+        let {name,year,acType}=s1;
+        console.log(name,year,acType);
+
+    </script>
+</body>
+</html>

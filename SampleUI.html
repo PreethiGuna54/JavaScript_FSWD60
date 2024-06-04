@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    console.log("HelloWorld")
+    console.log(typeof(2.33333333));
+    console.log(typeof(3333333));
+    console.log(typeof('5'));
+    console.log(typeof('Good'));
+    console.log(typeof('bad'));
+    console.log(typeof(true));
+    console.log(typeof(false));
+    console.log(typeof('true'));
+    console.log(typeof('false'));
+    console.log(typeof('try'));
+    console.log("10"+10+10+"1");//1010101
+    console.log("10"+10+10+"10");//10101010
+    console.log(10+10+10+"10"+10);//301010
+
+    var arr =[10,20,30,"Abhi","Sangeetha","nyc",80,60,70];
+    console.log(arr);
+    console.log(arr.length);
+    arr[9]="Fyn";
+    console.log(arr);
+    console.log(arr[arr.length-1])
+
+    var stdobj={
+        name:"Preethi",
+        course:"FSD",
+        type:"Full-Tym",
+        working:"Yes",
+        place:["Chennai","Banglore"]
+    }
+    console.log(stdobj);
+    console.log(stdobj.working);
+    console.log(stdobj.course);
+    stdobj.location ="Coimbatore";
+    console.log(stdobj);
+    console.log(Object.keys(stdobj));
+    console.log(Object.keys(stdobj).length);
+    console.log(Object.values(stdobj).length);
+    console.log(Object.values(stdobj));
+
+    var stdJsn = {"name":"Preethi",
+                    "course":"FSD",
+                    "UG":"BE"
+    }    
+    console.log(JSON.stringify(stdJsn));
+    var nwJsn = JSON.parse(JSON.stringify(stdJsn))
+    console.log(nwJsn);
+let str ="";
+for(var i=0;i<=4;i++){
+    for(var j=0;j<=4;j++){
+        str += "*";
+    }
+    str+= str+"\n";
+}
+console.log(str);
+
+    </script>
+    
+</body>
+</html>

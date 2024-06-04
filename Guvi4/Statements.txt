@@ -1,0 +1,37 @@
+Functions:
+-> Set of statement/block of code which is responsible doing certain tasks/computation and at the
+end it returns result to the user.
+
+Write a reusable fn.
+Syntax: function is a keyword
+function functionname(){
+//Set of statement/ block of code
+}
+
+//invokes/call the function
+functionName();
+
+//function with params
+function functionname(Param1,Param2,Param3.....n){
+//Set of statement/ block of code
+}
+functionname(arg1,arg2,arg3....n);
+
+//function with return
+function functionname(Param1,Param2,Param3.....n){
+//Set of statement/ block of code
+return result;
+}
+
+//Anonymous function
+it will not have any function name, so it will be stored in to a variable
+var x=function(){
+    //code
+}
+x();
+
+//ImmediatelyInvoked Function IIFE
+(grouping func)(immediateinvokeing);
+(function(){
+
+})();

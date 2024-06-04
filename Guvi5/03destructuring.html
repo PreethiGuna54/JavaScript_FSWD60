@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array Destructuing
+        let arr=[100,200,300,400]
+        console.log(arr[0]);
+        console.log(arr)
+        let [n1,n2,n3,n4] = arr;
+        console.log(n1,n2,n3,n4)
+
+        //Object Destructuring
+        var obj={
+            name:"Preethi",
+            roll:21,
+            languages:"JS",
+            place:"Chennai"
+        }
+        console.log(obj.languages,obj.place,obj.name,obj.roll);
+
+        let {name,place,roll,languages} =obj
+console.log(name,roll,place,languages)
+    </script>
+</body>
+</html>

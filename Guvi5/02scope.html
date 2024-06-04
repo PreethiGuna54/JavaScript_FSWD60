@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //scope >{ //scope}
+        //if //for //function {}
+
+        var a;
+        a=90;
+        console.log(a);
+
+        let b;
+        b=80;
+        console.log(b)
+
+        const c=70;
+        console.log(c);
+
+        {
+            console.log(a,b,c)
+        }
+
+        //var > doesnt have any scope concerrns
+        //has functional scopee
+
+        function test(){
+            var x=10;
+            console.log(x,a)
+            var t=190;
+            console.log(t);
+            let g=98;
+            const h=89;
+        }
+        test();
+        //console.log(t)// t is not defined
+        //console.log(h)// t is not defined
+        //console.log(g)// t is not defined
+
+        //let
+        {
+            console.log(b)
+            let y =89;
+            console.log(y);
+        }
+        //console.log(y)
+
+        //const
+        {
+            console.log(c)
+            let u=76;
+            console.log(u)
+        }
+        //console.log(u)
+
+        //let const scope
+        //var functional scaope
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Function ........1")
+        function testFunc(){
+            console.log("Function..........2")  
+        }
+        testFunc();
+
+        function displayName(){
+            console.log("Preethi Guna")   
+        }
+        displayName();
+
+        function sumOfTwo(n1,n2,n3,n4){
+            console.log(n1+n2+n3+n4);
+        }
+        sumOfTwo(1,1,1,1);
+
+        function multiplyFn(n1){
+            for(var i=1;i<11;i++){
+                console.log(i+" * "+n1+" = "+i*n1)
+            }
+        }
+        multiplyFn(3);
+
+        function sumOfTwonums(n1,n2,n3,n4){
+            var a=n1+n2+n3+n4;
+            return a;
+        }
+        console.log(sumOfTwonums(1,1,1,1));
+
+        function scoredMarks(n1,n2,n3){
+           var a=n1+n2+n3;
+            return a;
+        }
+        var total = scoredMarks(89,90,80);
+        console.log(total);
+        function percentageOfMarks(score){
+            var percntg = ((score/300)*100).toFixed(2);
+           // percntg=percntg
+            return percntg
+        }
+        console.log(percentageOfMarks(total))
+    </script>
+</body>
+</html>

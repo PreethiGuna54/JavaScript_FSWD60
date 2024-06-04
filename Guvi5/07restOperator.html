@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//rest ...
+//rest parameters
+let arr=[1,2,3,65,89,45,75,123,45,12345,879,356,54554,45]
+        function test(a,b,c,...rest){
+            console.log(a,b,c);
+            console.log(rest)//[]
+            let sum=0;
+            for(let i=0; i<rest.length;i++){
+                sum += rest[i];
+            }
+            console.log(sum+a+b+c)//since sum will sum of arrays in rest so we need to explicitly add a,b,c
+        }
+        test(1,2,3,1,2,3,65,89,45,75,123,45,12345,879,356,54554,45);
+        test(1,2,3,arr);
+        
+
+       // function test(a,b,c,...rest,d,e){}----> throws error as rest variable should be at the terminal end
+        function test(...rest){
+            let sum=0;
+            for(let i=0; i<rest.length;i++){
+                sum += i;
+            }
+            console.log(sum)
+        }
+        test(...arr)
+
+
+
+    </script>
+</body>
+</html>

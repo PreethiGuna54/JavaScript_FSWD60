@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//spread || operators
+        const number =[1,2,3]
+        console.log(number)
+        console.log(...number)
+
+        let a=90;
+        let b=89;
+        let c=100;
+
+        console.log(Math.max(a,b,c));
+        
+        let newarr=[a,b,c];
+        console.log(Math.max(...newarr));
+        console.log(Math.min(...newarr));
+
+        function add(x,y,z){
+            console.log(`${x}+${y}+${z}=`,x+y+z);
+        }
+        add(100,200,300)
+        add(...number)
+        add(...newarr)
+
+        var str ="guvi"
+        console.log(...str)//spreading
+        console.log([...str])//pushing
+
+        let arrLatest=[...number,...newarr];
+        console.log(arrLatest)//concating
+
+        let arrfinl=[...number]//copying
+        console.log(arrfinl);
+    </script>
+</body>
+</html>
