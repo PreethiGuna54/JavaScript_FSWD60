@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[11,21,33,41,52,63,78,96,47,52,65,32];
+        arr.map((element,index)=>{
+            console.log(`This Element ${element} lies at the index ${index}`);
+        })
+        let res=arr.map((element,index)=>{
+            return `This Element ${element} lies at the index ${index}`
+        })
+        console.log(res);
+
+        let res1=arr.map((element,index)=>(
+          element*10
+        ))
+        console.log(res1);
+
+
+        let student=[{
+            name:"Preethi",
+            score:70
+        },
+        {
+            name:"Pradeep",
+            score:50
+        },
+        {
+            name:"Shivaang",
+            score:60
+        },
+        {
+            name:"Preethi",
+            score:40
+        }
+    ]
+    var result = student.map((element,index)=>{
+       // var arr=[]
+       element.score= element.score+10
+        return element
+    })
+    console.log(result);
+    </script>
+</body>
+</html>

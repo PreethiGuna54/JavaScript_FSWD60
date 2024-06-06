@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let arr=[11,21,33,41,52,63,78,96,47,52,65,32];
+
+    let res=arr.reduce((acc,element)=>{
+        console.log(acc+"          "+element)
+        return acc+element
+    })
+    console.log(res);
+
+    let res1=arr.reduce((acc,element)=> acc+element,10);
+    console.log(res1)
+
+    let res2=arr.reduce((acc=10,element)=> acc+element);
+    console.log(res2)
+
+    let student=[{
+            name:"Preethi",
+            score:70
+        },
+        {
+            name:"Pradeep",
+            score:50
+        },
+        {
+            name:"Shivaang",
+            score:60
+        },
+        {
+            name:"Preethi",
+            score:40
+        }
+    ]
+    let fnres=student.reduce((acc,element)=>acc+element.score,0)
+    console.log(fnres);
+    </script>
+</body>
+</html>

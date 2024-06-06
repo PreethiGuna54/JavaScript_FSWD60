@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    let arr=[11,21,33,41,52,63,78,96,47,52,65,32];
+    arr.filter((element,index)=>console.log(element%2==0));
+    let res = arr.filter((element,index)=>element%2==0);
+    console.log(res);
+
+
+    let res1 = arr.filter((element)=>element%2!=0);
+    console.log(res1)
+
+    let student=[{
+            name:"Preethi",
+            score:70
+        },
+        {
+            name:"Pradeep",
+            score:50
+        },
+        {
+            name:"Shivaang",
+            score:60
+        },
+        {
+            name:"Preethi",
+            score:40
+        }
+    ]
+
+    let res2= student.filter((element)=>element.score>40)
+    console.log(res2)
+
+    let res3=res2.map((element)=>`${element.name}is scored ${element.score}`);
+    console.log(res3);
+
+    let fnresult = student.filter((element)=>element.score>40).map((element)=> `${element.name} scored ${element.score}`);
+    console.log(fnresult);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>  
+</body>
+</html>

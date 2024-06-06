@@ -1,0 +1,18 @@
+Array Methods > Arrays
+
+MRF
+
+MAP
+arr.map()
+> function as a parameter
+arr.map(()=>{})
+        >(element,index)
+
+arr.map((element,index)=>{//block of code});
+
+REDUCE
+
+FILTER
+>function as a parameter
+arr.filter((element,index)=>{})
+condition >>> true (o/p) false (ignored)

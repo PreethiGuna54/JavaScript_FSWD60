@@ -1,0 +1,13 @@
+Object Oriented Programming
+
+OBJECTS: Real Time Entity
+CLASS : Plan before creating any Objects || blueprint of Object
+METHODS: Communicate with the Objects
+
+
+Syntax:
+Class ClassName{
+    constructor(){
+        +//
+    }
+}

@@ -35,3 +35,14 @@ x();
 (function(){
 
 })();
+
+//Arrow Function
+//EcmaScript6
+function keyword is missing
+arrow is added
+developers can write easily
+=>
+let variableName =()=>{
+
+}
+variableName();
