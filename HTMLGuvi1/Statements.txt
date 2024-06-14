@@ -1,0 +1,46 @@
+Need to be installed
+--Extensions/MarketPlace
+HTML CSS Support -ecmel
+Live server-ritwickdey
+vscode-icons - vscodeiconsteam
+html boilerplate - sidthesloth
+Material Icon Theme - philipp kief
+Prettier - code formatter-Prettier
+
+
+TAGS:
+    <Openingtag></closingTag>
+    <html></html>
+    <head></head>
+    <selftag>||<selftag/>
+    <meta>||<meta/>
+
+    HeadingTag
+    <h1>Guvi</h1>
+    <h2>Guvi Offers</h2>
+    <h3>Full Course</h3>
+    <h4>With Recording</h4>
+    <h5>Also Placements</h5>
+    <h6>High Package</h6>
+
+ATTRIBUTE:
+src,width,height etc are attributes
+    <img src="" alt="" height="" width="">
+
+ELEMENT
+    Inline: side by side if width permits >occupies only the width --<img>,<span>
+    Block: one below one > fully occupies the full width---<p>,<div>
+
+
+
+<html>
+<head>
+<title>Document</title>
+</head>
+<body>
+<div>
+</div>
+<div>
+</div>
+</body>
+</html>

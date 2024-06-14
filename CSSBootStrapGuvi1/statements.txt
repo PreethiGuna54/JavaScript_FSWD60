@@ -1,0 +1,8 @@
+
+Breakpoint	Class infix	Dimensions
+X-Small 	None	<576px    0<x<575
+Small	    sm	    ≥576px    576<x<768
+Medium	    md	    ≥768px     768<x<992
+Large	    lg	    ≥992px      992<
+Extra large	xl	    ≥1200px
+Extra extra large	xxl	≥1400px

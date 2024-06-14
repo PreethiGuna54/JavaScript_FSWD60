@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <title>Document</title>
+    </head>  
+    <style>
+        div{
+            font-size: 100px;
+            color:black;
+            padding: 20px;
+        }
+        @media screen and (max-width:400px) {
+            div{
+            background-color: aqua;
+            padding: 15px;
+            }
+        }
+        @media screen and (min-width:500px) {
+            div{
+            background-color: lawngreen;
+            padding: 25px;
+            }
+        }
+
+        @media (min-width:401px) and (max-width:500px){
+            div{
+                background-color: hotpink;
+                font-size: 95px;
+                font-style: oblique;
+            }
+        }
+
+        @media (min-width:600px) and (max-width:780px){
+            div{
+                background-color: yellowgreen;
+                font-size: 75px;
+                padding: 20px;
+
+            }
+        }
+
+        @media (min-width:114px) and (max-width:250px){
+            div{
+                background-color: goldenrod;
+                font-size: 50px;
+                padding: 10px;
+
+            }
+        }
+    </style>
+    <body>
+    
+    <div>Hi Everyone!</div>
+</body>
+</html>

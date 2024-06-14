@@ -1,0 +1,22 @@
+CSS:
+
+
+STYLING
+
+
+Selectors
+id  id="" attribute inside the tag  value > userdefined name >>unique >> #idname{...}
+class class="" attribute inside the tag  value > userdefined name >> not unique 
+tag <p></p>
+
+Syntax
+
+Selectors{
+    property1:value,
+     property1:value,
+      property1:value,
+       property1:value
+}
+
+
+external css -- link is mandatory
