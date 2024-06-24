@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tablenode = document.createElement('table');
+        tablenode.setAttribute('border',1);
+        tablenode.setAttribute('cell-spacing',0)
+        console.log(tablenode);
+        document.body.append(tablenode);
+        //Header Row and Column
+        let theadnode = document.createElement('tHead');
+        tablenode.appendChild(theadnode);
+
+        let theadrow = document.createElement('tr');
+        theadnode.appendChild(theadrow)
+
+        let theadcolumn1 = document.createElement('td');
+        theadcolumn1.innerHTML="<h2>S.No</h2>"
+        theadrow.appendChild(theadcolumn1)
+
+
+        let theadcolumn2 = document.createElement('td');
+         theadcolumn2.innerHTML="<h2>Name</h2>"
+        theadrow.appendChild(theadcolumn2)
+
+        let theadcolumn3 = document.createElement('td');
+         theadcolumn3.innerHTML="<h2>Batch</h2>"
+        theadrow.appendChild(theadcolumn3)
+
+        //Body Row and Column
+        
+        let tbodynode = document.createElement('tBody');
+        tablenode.appendChild(tbodynode);
+        //Loop Row and Column
+        for(var i=1; i<4;i++){
+            let rowName="tbodyrow"+i
+            rowName = document.createElement('tr');
+            tablenode.appendChild(rowName)
+
+            for(var j=0; j<3;j++){
+                let columnName="tbodycolumn"+i+j
+                columnName = document.createElement('td');
+                if(j==0){
+                    columnName.innerHTML="<h4>"+i+"</h4>"
+                }
+                if(j==2){
+                    columnName.innerHTML="<h4>FSDWD60</h4>"
+                }
+                if(j==1){
+                    columnName.innerHTML="<h4>Sample"+i+"</h4>"
+                }
+                rowName.appendChild(columnName)
+            }
+        }
+        
+
+      
+//else
+
+        let tbodycolumn12 = document.createElement('td');
+        tbodycolumn12.innerHTML="<h4>Preethi</h4>"
+         tbodyrow.appendChild(tbodycolumn12)
+
+        let tbodycolumn13 = document.createElement('td');
+        tbodycolumn13.innerHTML=
+         tbodyrow.appendChild(tbodycolumn13)
+
+         //Second Row
+         
+
+    </script>
+</body>
+</html>
