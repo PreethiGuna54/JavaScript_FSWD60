@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function callMeBack(){
+            console.log("I am Callback Function")
+        }
+
+        function greet(callbk,a){
+            console.log("I am function"+a)
+            callbk();
+        }
+        greet(callMeBack,"normal");
+
+        setTimeout(hello,1000);
+
+        function hello(){
+            console.log("Hello")
+        }
+
+        function sum(a,b){
+            console.log("Inside CallBack Function :");
+            return a+b;
+        }
+        function displaySum(callback,a,b){
+            console.log("Total Sum : "+callback(a,b))
+            
+        }
+        displaySum(sum,5,6)
+
+        function greet(a){
+            console.log("Callback Function");
+            var str = "Gud Afternoon "+a ;
+            return str;
+        }
+
+        function displayName(callback,a){
+            console.log(callback(a));
+        }
+
+        displayName(greet,"Preethi")
+
+        function xMLReq(callback){
+            var req=new XMLHttpRequest();
+            req.open("GET",'https://raw.githubusercontent.com/PugazharasanC/rest-api/main/countriesV3.1.json')
+            req.send();
+            let res=[];
+             req.onload=function(){ 
+                if(req.status==200){
+                    var res= JSON.parse(req.response);
+                    console.log(res)
+                    callback(res)
+                }else{
+                    console.log("Something went wrong")
+                }
+                
+            }
+        }
+
+        function filteringNames(res){
+            for(var element of res){
+                console.log(element.name.common)
+            }
+        }
+        xMLReq(filteringNames)   
+
+    </script>
+</body>
+</html>

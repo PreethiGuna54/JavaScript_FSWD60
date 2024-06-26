@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    //setTimeout(()=>{},delay-timer-ms)
+    setTimeout(()=>{
+        console.log("Hi!!");
+    },1000)
+    setTimeout(timer,2000);
+    function timer(){
+        console.log("Timer Called")
+    }
+    setTimeout(addTimer,3000,6,7)
+    
+    function addTimer(a,b){
+        console.log("addTimer Called")
+        console.log(a+b)
+    }
+  </script>  
+</body>
+</html>

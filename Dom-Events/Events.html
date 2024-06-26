@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn01" onclick="clickMe(event)">Single Click Button</button>
+    <button id="btn02" ondblclick="dblClickMe()">Double Click Button</button>
+    <button id="btn03" onmousedown="mouseDownEvent()">Mouse Down Event</button>
+    <button id="btn04" onmouseup="mouseUpEvent()">Mouse Up Event</button>
+    <button id="btn05">Click Event Triggered-01</button>
+    <button id="btn06">Click Event Triggered-02</button>
+<script>
+  function clickMe(event){
+    console.log(event)
+    let pTag=document.createElement('p')
+        pTag.innerHTML="<h2>Single click pointer event!!!</h2>"
+        pTag.style.colour="Purple"
+        document.body.append(pTag);
+  }  
+  function dblClickMe(event){
+    console.log(event)
+    let pTag=document.createElement('p')
+        pTag.innerHTML="<h2>Double click Mouse event!!!</h2>"
+        pTag.style.colour="Indigo"
+        document.body.append(pTag);
+  } 
+
+  let btn05Button = document.getElementById('btn05');
+  btn05Button.addEventListener('click',(event)=>{
+    console.log(event);
+    console.log("Hello World")
+});
+let btn06Button = document.getElementById('btn06');
+  btn06Button.addEventListener('click',test)
+  function test(){
+    console.log("New Function Called");
+  }
+
+  let btn07Button=document.createElement('button');
+  btn07Button.setAttribute('id',"btn07");
+  btn07Button.innerText="New Button"
+  document.body.append(btn07Button);
+  console.log(btn07Button)
+  btn07.addEventListener('click',()=>{
+    console.log("Brand New Button Created")
+  })
+
+</script>
+
+</body>
+</html>

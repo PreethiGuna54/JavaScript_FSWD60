@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const p1=new Promise((resolve,reject)=>{
+            if(true){
+                setTimeout(()=>{
+                    resolve("Happy Timer 1")
+                },2000)
+                
+            }else{
+                reject("Sad Timer")
+            }
+        })
+
+        p1.then((data)=>console.log(data)).catch((err)=>console.log(err));
+
+        const p2=new Promise((resolve,reject)=>{
+            if(true){
+                setTimeout(()=>{
+                    resolve("Happy Timer 2")
+                },2000)
+                
+            }else{
+                reject("Sad Timer")
+            }
+        })
+
+        p2.then((data)=>console.log(data)).catch((err)=>console.log(err));
+
+        const p3=new Promise((resolve,reject)=>{
+            if(true){
+                setTimeout(()=>{
+                    resolve("Happy Timer 3")
+                },2000)
+                
+            }else{
+                reject("Sad Timer 3")
+            }
+        })
+
+        p3.then((data)=>console.log(data)).catch((err)=>console.log(err));
+
+        const p4=new Promise((resolve,reject)=>{
+            if(true){
+                setTimeout(()=>{
+                    resolve("Happy Timer 4")
+                },2000)
+                
+            }else{
+                reject("Sad Timer 4")
+            }
+        })
+
+        p4.then((data)=>console.log(data)).catch((err)=>console.log(err));
+
+        Promise.all([p1,p2,p3,p4]).then((data)=>console.log(data)).catch((err)=>console.log(err));
+    </script>
+</body>
+</html>

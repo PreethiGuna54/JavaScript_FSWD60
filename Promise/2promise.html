@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          //  var age1=  prompt("Enter the Age");
+          var age1 =77;
+       
+       const p6 = new Promise((resolve,reject)=>{
+       if(age1 > 18){
+           resolve("You are Eligible");
+       }else{
+           reject("Sorry, You are not eligible");
+       }
+   })
+ 
+   //p6.then((data)=>console.log(data)).catch((err)=>console.log(err))
+
+  var accessEnabled=true;
+   function writeAccess(){
+       return new Promise((resolve,reject)=>{
+           if(accessEnabled){
+               resolve("You are provided with access")
+           }else{
+               reject("You are not having access");
+           }
+       })
+   }
+
+   writeAccess().then((data)=>console.log(data)).catch((err)=>console.log(err))
+
+   //Adding setTimeout
+
+   var accessEnabled=true;
+   function writeAccess1(){
+       return new Promise((resolve,reject)=>{
+           if(accessEnabled){
+               setTimeout(()=>{
+                   resolve("You are provided with access")
+               },1000)
+               
+           }else{
+               reject("You are not having access");
+           }
+       })
+   }
+
+   writeAccess1().then((data)=>console.log(data)).catch((err)=>console.log(err))
+    </script>
+</body>
+</html>

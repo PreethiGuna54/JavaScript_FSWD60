@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 30%;margin: auto;">
+    <input  type="text" name="" id="" placeholder="Enter the FirstName" oninput="test01(event)"><br> <hr>    
+    <input  type="text" name="" id="" placeholder="Enter the MiddleName" onblur="test02(event)"><br> <hr>    
+    <input  type="text" name="" id="" placeholder="Enter the LastName" onfocus="test03(event)"><br> <hr>    
+    <input  type="text" name="" id="inputBox04" placeholder="Enter the FullName" ><br> <hr>    
+    </div>
+    <script>
+        function test01(event){
+            console.log(event)
+            console.log(event.target.value);
+            let pTag= document.createElement('p')
+            pTag.setAttribute('id',"Ptag1")
+            pTag.innerHTML=event.target.value
+            pTag.style.color="green"
+            document.body.append(pTag)
+        }
+        function test02(event){
+            console.log(event)
+            console.log(event.target.value);
+            let pTag= document.createElement('p')
+            pTag.setAttribute('id',"Ptag1")
+            pTag.innerHTML=event.target.value
+            pTag.style.color="purple"
+            document.body.append(pTag)
+        }
+        function test03(event){
+            console.log(event)
+            console.log(event.target.value);
+            let pTag= document.createElement('p')
+            pTag.setAttribute('id',"Ptag1")
+            pTag.innerHTML=event.target.value
+            pTag.style.color="Orange"
+            document.body.append(pTag)
+        }
+
+        let inputBox04=document.getElementById('inputBox04')
+        inputBox04.addEventListener('click',(event)=>{
+            console.log(event)
+            console.log(event.target.value);
+            let pTag= document.createElement('p')
+            pTag.setAttribute('id',"Ptag1")
+            pTag.innerHTML=event.target.value
+            pTag.style.color="Indigo"
+            document.body.append(pTag)
+        })
+
+    </script>
+</body>
+</html>

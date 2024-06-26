@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id ='setId1'>Div1</div>
+    <div id ='setId2'>Div2</div>
+   
+    <div class="setClass1">Div3</div>
+    <div class="setClass1">Div4</div>
+    <div class="setClass1">Div4</div>
+    <div class="setClass1">Div4</div>
+    <div class="setClass1">Div4</div>
+    <div class="setClass1">Div4</div>
+
+    <p>P1</p>
+    <p>P2</p>
+    <p>P3</p>
+    <p>P4</p>
+    <p>P5</p>
+    <p>P6</p>
+    
+    <script>
+        let test01= document.getElementById('setId1')
+        test01.style.background="red"
+        test01.style.fontSize="35px"
+        console.log(test01);
+
+        let test02=document.getElementsByClassName('setClass1');
+        console.log(test02)
+
+        for(let i=0;i<test02.length;i++){
+            test02[i].innerHTML="<h5>Try Try Untill u Succeed</h5>"
+            test02[i].style.background="pink"
+            test02[i].style.width="400px"
+        }
+
+        let test03=document.getElementsByTagName('p')
+        console.log(test03)
+        for(let i=0;i<test03.length;i++){
+            test03[i].innerHTML="<h5>Try Try Try Untill u Succeed</h5>"
+            test03[i].style.background="yellow"
+            test03[i].style.width="500px"
+        }
+
+        let test05 = document.querySelector('.setClass1')
+        console.log(test05);
+
+        let test06 = document.querySelectorAll('.setClass1')
+        console.log(test06);
+
+        let test07 = document.querySelectorAll('p')
+        console.log(test07);
+
+        let test08 = document.querySelectorAll('#setId1')
+        console.log(test08);
+    </script>
+</body>
+</html>

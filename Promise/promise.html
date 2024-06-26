@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const p=new Promise(()=>{});
+        console.log(p)
+
+        const p1 = new Promise((resolve,reject)=>{
+            resolve("Hi,I met You");
+        })
+        console.log(p1)
+
+        const p2 = new Promise((resolve,reject)=>{
+            reject("Sorry, i didnt turn up");
+        })
+        console.log(p2)
+
+        const p3 = new Promise((resolve,reject)=>{
+            resolve("Hi,I met You");
+            reject("Sorry, i didnt turn up");//not executed
+        })
+        console.log(p3)
+
+        const p4 = new Promise((resolve,reject)=>{
+            reject("Sorry, i didnt turn up");
+            resolve("Hi,I met You");//not executed
+        })
+        console.log(p4)
+
+        const p5= new Promise((resolve,reject)=>{
+            if(true){
+                resolve("Hi,I met You");
+            }else{
+                reject("Sorry, i didnt turn up");
+            }
+           
+        })
+        console.log(p5)
+        
+
+    
+        
+    </script>
+</body>
+</html>

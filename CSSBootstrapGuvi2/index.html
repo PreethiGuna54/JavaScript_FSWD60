@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let div01=document.createElement('div');
+        console.log(div01);
+        div01.innerHTML="Div01";
+        console.log(div01);
+        document.body.append(div01)
+
+        let div02=document.createElement('div');
+        console.log(div02);
+        div02.innerHTML="Div02";
+        console.log(div02);
+        document.body.append(div02)
+
+        let div03=document.createElement('div');
+        console.log(div03);
+        div03.innerHTML="<h2>Div03</h2>";
+        console.log(div03);
+        document.body.append(div03)
+        
+        let div04=document.createElement('div');
+        console.log(div04);
+        div04.innerText="<h1>Div04</h1>";
+        console.log(div04);
+        document.body.append(div04)
+        
+        let div05=document.createElement('div');
+        console.log(div05);
+        div05.setAttribute("id","Sample");
+        div05.classList.add('text-primary','bg-warning','fs-2','fw-bold',
+        'text-dexoration-underline','text-uppercase','w-50','opacity-50','rounded','m-auto','p-3')
+        div05.innerText="Happy Happy WeekEnd"
+        console.log(div05);
+        document.body.append(div05)
+
+        let anchorTag = document.createElement('a');
+        console.log(anchorTag)
+        anchorTag.setAttribute('href',"https://software.hixie.ch/utilities/js/live-dom-viewer/")
+       anchorTag.setAttribute('target','_blank')
+        console.log(anchorTag);
+        document.body.append(anchorTag)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='ques01' onmouseover=test(event)>Change the Color the div/span when mouse over it</div>
+    <div id="ques03" onclick="test03(event)">Show the Mouse coordinates when we clicked on the div/span!!!!</div>
+    <textarea id="ques04" oninput="test04(event)"></textarea>
+    <span id="spanTest04"></span><hr/>
+    <div id="ques09"contenteditable="true">Change the world with the knowledge of software... Dont Worry Everything will be okay!!!</div>
+    <script>
+       //Q1 Change the Color the div/span when mouse over it
+       function test(event){
+            let divTag01= document.getElementById('ques01')
+            divTag01.style.color="Green"
+            setTimeout(test01,2000);
+            function test01(){
+                divTag01.style.color="Red"
+            }
+        }
+        //Q2 prompt the value and store it in Div/span
+        let test02=window.prompt("Enter the Value")
+        let divTest02 =document.createElement('div');
+        divTest02.innerText=test02
+        document.body.append(divTest02)
+
+        function test03(event){
+            let spanTask03=document.createElement('span');
+            spanTask03.setAttribute('id',"spanTest03");
+            spanTask03.innerHTML="the mouse coordinates lies at the x coordinates"+event.clientX+ "  at the Y coordinates"+event.clientY
+            document.body.append(spanTask03)
+        }
+        let spanTask04=document.getElementById('spanTest04');
+        function test04(event){
+            let str=event.target.value;//spanTask04.value is also possible
+            str=str.replace(/ /g,"");
+            spanTask04.innerHTML=str.length;
+            document.body.append(spanTask04)
+        }
+
+//charcode:117 code:keyU keyCode:117  Key:"u"
+//charcode:13 code:Enter keyCode:13  Key:"Enter"
+//charcode:32 code:Space keyCode:32  Key:" "
+        document.addEventListener('keypress',(event)=>{
+            console.log(event)
+            if(event.code=="Space"){
+                alert("Thank You..!!!")
+                window.close()
+            }else{
+                alert("Invalid Key Pressed")
+                window.open();
+            }
+        })
+    </script>
+</body>
+</html>

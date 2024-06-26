@@ -34,7 +34,7 @@
 
         //Body Row and Column
         
-        let tbodynode = document.createElement('tBody');
+      /*  let tbodynode = document.createElement('tBody');
         tablenode.appendChild(tbodynode);
         //Loop Row and Column
         for(var i=1; i<4;i++){
@@ -56,22 +56,56 @@
                 }
                 rowName.appendChild(columnName)
             }
-        }
-        
+        }*/
 
-      
-//else
+        //Else
+        //First Row
+        let tbodyrow = document.createElement('tr');
+        tablenode.appendChild(tbodyrow)
+        //Column Details
+        let tbodycolumn11 = document.createElement('td');
+        tbodycolumn11.innerHTML="<h4>1</h4>"
+        tbodyrow.appendChild(tbodycolumn11)
 
         let tbodycolumn12 = document.createElement('td');
         tbodycolumn12.innerHTML="<h4>Preethi</h4>"
          tbodyrow.appendChild(tbodycolumn12)
 
         let tbodycolumn13 = document.createElement('td');
-        tbodycolumn13.innerHTML=
-         tbodyrow.appendChild(tbodycolumn13)
+        tbodycolumn13.innerHTML="<h4>FSDWD60</h4>"
+        tbodyrow.appendChild(tbodycolumn13)
+        //Second Row
+        let tbodyrow1 = document.createElement('tr');
+        tablenode.appendChild(tbodyrow1)
+        //Column Details
+        let tbodycolumn21 = document.createElement('td');
+        tbodycolumn21.innerHTML="<h4>2</h4>"
+        tbodyrow1.appendChild(tbodycolumn21)
 
-         //Second Row
-         
+        let tbodycolumn22 = document.createElement('td');
+        tbodycolumn22.innerHTML="<h4>Magizhini</h4>"
+         tbodyrow1.appendChild(tbodycolumn22)
+
+        let tbodycolumn23 = document.createElement('td');
+        tbodycolumn23.innerHTML="<h4>FSDWD60</h4>"
+        tbodyrow1.appendChild(tbodycolumn23)
+
+        //Second Row
+        let tbodyrow2 = document.createElement('tr');
+        tablenode.appendChild(tbodyrow2)
+        //Column Details
+        let tbodycolumn31 = document.createElement('td');
+        tbodycolumn31.innerHTML="<h4>3</h4>"
+        tbodyrow2.appendChild(tbodycolumn31)
+
+        let tbodycolumn32 = document.createElement('td');
+        tbodycolumn32.innerHTML="<h4>Sen</h4>"
+        tbodyrow2.appendChild(tbodycolumn32)
+
+        let tbodycolumn33 = document.createElement('td');
+        tbodycolumn33.innerHTML="<h4>FSDWD60</h4>"
+        tbodyrow2.appendChild(tbodycolumn33)
+
 
     </script>
 </body>

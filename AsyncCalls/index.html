@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Hello World!!!");
+        console.log("Hello GUVI!!!");
+        setTimeout(function(){
+            console.log("First Timeout")
+        },3000);
+
+        console.log("App Started")
+        setTimeout(function(){
+            console.log("Second Timeout")
+        },3000);
+
+        
+        setTimeout(function(){
+            console.log("Third Timeout")
+        },3000);
+
+        console.log("App Executed");
+
+        function test(a,b){
+
+            var sum=a+b;
+            console.log(sum);
+            
+        }
+        test(2,3);
+        var sum= function(a,b){
+            return a+b;
+        }
+        console.log(sum(3,5));
+
+    </script>
+</body>
+</html>
